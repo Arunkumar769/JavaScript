@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+     //let name=prompt("Enter Your name")
+     let aa=prompt()
+     let bb=prompt()
+     console.log(typeof(aa))
+     document.write(typeof(aa))
+     console.log(aa+bb)
+     document.write(aa+bb)
+
+
+
+
+
+
+         let a=105
+         let b=-"105"
+    
+
+     document.write(a!=b,"<br>")
+      //b=b-30
+
+     document.write(a>b && b>11,"<br>")
+     document.write(a>b || b>11,"<br>")
+     document.write(b,"<br>")
+     document.write(a,"<br>")
+
+
+     document.write(!(false),"<br>")
+     document.write(!(a>b),"<br>")
+    /// document.write(a/b,"<br>")
+     //document.write(a*b,"<br>")
+     //document.write(a**b)
+     
+        
+        
+    </script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+JAVASCRIPT OPERATORS:
+1)Arithmetic :
++ - * 
+Multiplication
+Division
+Assignment :
+ Var student = “swetha”
++=
+-=/=
+%=
+Logical operators:
+And      -     &&
+T and T       =      T
+Or     -       ||
+T or F      =      F
+Not       -        !
+ 
+RELATIONAL (COMPARISION) VALUES
+
+        <.>,>=,=,<=,==,===,!=,!===
+        == -equality
+Conditional operator; Ternary Operator(?)
+First evaluate an expression for a true or false ;
+Syntax :
+Condition ?e1
