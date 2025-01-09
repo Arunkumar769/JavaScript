@@ -1,0 +1,59 @@
+Conditional Statements:
+--To make the set of instructions execute only when the given condition is true
+--used to decide whether the code has to be executed or skip based on the given condition
+--line  - line (sequence)
+Block of code: Set of instructions:
+
+Condition : an expression that evaluates an result(True or False)
+Ex: console.log(5>6)
+--Methods:
+If 
+If – else
+Else if
+Switch
+Ternary Operator
+
+If: only one possible condition:
+--if the condition is True it will execute other wise it skip
+
+Syntax:
+--if (condition){
+----block of code
+}
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let a=prompt("Enter your score:") 
+        let b=prompt("Enter your score:")
+        let c=a+b
+        if((a>300 || b>300) && (c<500)){
+            alert("Can team up")
+        }else{
+            alert("Cannot team up")
+        }
+        //let name=prompt("Enter your name:") 
+        //let age=prompt("Enter your age:")
+        //if(age<20){
+        //    document.write(name +" u are too young to marry")
+       // }else if(age>35){
+         //   document.write(name +" u are to old marry")
+        //}else{
+        //document.write(name +" perfect age to marry")
+       // }
+       // document.write("welcome to world")
+    </script>
+    
+</body>
+</html>
