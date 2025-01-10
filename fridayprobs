@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     
+        let a=parseInt(prompt("salary"))
+        let b=parseInt(prompt("years of service"))
+        if(b>10){
+            let c=a*0.1
+            let d=c+a
+            document.write("after bonus salary"+d)
+        }
+        else if(b>=6 && b<=10){
+            let c=a*0.08
+            let d=c+a
+            document.write("after bonus salary"+d)
+        }
+        else if(b<6){
+            let c=a*0.05
+            let d=c+a
+            document.write("after bonus salary"+a)
+        }
+        else{
+            document.write(a)
+        }
+        
+        let num1 = parseInt(prompt("Enter first number: "));
+        let num2 = parseInt(prompt("Enter second number: "));
+        let num3 = parseInt(prompt("Enter third number: "));
+
+        if (num1 >= num2 && num1 >= num3) {
+            document.write(num1 + " is the largest number.");
+        } else if (num2 >= num1 && num2 >= num3) {
+            document.write(num2 + " is the largest number.");
+        } else {
+            document.write(num3 + " is the largest number.");
+        }
+
+        let m=parseInt(prompt("Enter the working days: "));
+        let n=parseInt(prompt("Enter the absent days: "));
+        let totalDays = m + n;
+        let workingPercentage = (m / totalDays) * 100;
+        let absentPercentage = (n / totalDays) * 100;
+        document.write("Working days percentage: " + workingPercentage + "%");
+        document.write("<br> Absent days percentage: " + absentPercentage + "%");
+        if (workingPercentage < 75) {
+            document.write("<br> You are not eligible to write the exam.");
+        }else {
+            document.write("<br> You are eligible to write the exam.");
+        }
+
+        let m=parseInt(prompt("Enter the time period: "));
+        let n=parseInt(prompt("Enter the salary: "));
+        if(m>10){
+            document.write("Bonus:",n/100*10);
+        }else if((m>=6 && m<=10)){
+            document.write("Bonus:",n/100*8);
+        }else{
+            document.write("Bonus:",n/100*5);
+        }
+    </script>
+    
+</body>
+</html>
