@@ -1,0 +1,87 @@
+let num = parseInt(prompt());
+        switch (true) {
+            case num > 0:
+                document.write("Number is Positive")
+                 break;
+             case num == 0:
+                 document.write("Number is Zero")
+                 break;
+             case num < 0:
+                 document.write("Number is Negative", "<br>")
+                 break;
+             default:
+                 document.write("Invalid Input")
+         }
+
+
+
+// let day = parseInt(prompt());
+        // switch (day) {
+        //     case 1:
+        //         document.write("Monday")
+        //         break;
+        //     case 2:
+        //         document.write("Tuesday")
+        //         break;
+        //     case 3:
+        //         document.write("Wenesday", "<br>")
+        //         break;
+        //     case 4:
+        //         document.write("Thursday")
+        //         break;
+        //     case 5:
+        //         document.write("Friday")
+        //         break;
+        //     case 6:
+        //         document.write("Saturday")
+        //         break;
+        //     case 7:
+        //         document.write("Sunday")
+        //         break;
+        //     default:
+        //         document.write("Invalid Input")
+        // }
+
+
+
+         let day = (prompt("Enter a day"));
+         switch (day) {
+             case "Monday":
+             case "Tuesday":
+             case "Wednesday":
+             case "Thursday":
+                 document.write("Its a week day")
+                 break;
+            
+             case "Friday":
+             case "Saturday":
+             case "Sunday":
+                 document.write("Its a Weekend")
+                 break;
+             default:
+                 document.write("Invalid Day")
+       }
+
+
+
+
+        let units = parseInt(prompt("Enter the number of units used"));
+let bill = 0;
+
+if (units <= 50) {
+    bill = units * 2;
+} else if (units <= 150) {
+    bill = 50 * 2 + (units - 50) * 3;
+} else if (units <= 250) {
+    bill = (50 * 2 )+ 100 * 3 + (units - 150) * 5;
+} else {
+    bill = (50 * 2) + (100 * 3) + (100 * 5) + (units - 250) * 8;
+}
+
+bill = bill + (bill * 20) / 100;
+document.write("The total electricity bill is: " + bill);
+
+    </script>
+    
+</body>
+</html>
