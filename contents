@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="a">Arun</h1>
+    <h1 class="b">Ashish</h1>
+    <h1 class="c">Prurushotham</h1>
+    <h2>Nithin</h2>
+    <h2>Sri</h2>
+
+    <script>
+        //let x=document.getElementsByClassName('a')
+        //console.log(x)
+        //for(let i=0;i<x.length;i++){
+            //console.log(x[i])
+        //}
+
+        //let x=document.getElementsByTagName('h2')
+        //console.log(x)
+        //for(let i=0;i<x.length;i++){
+            //console.log(x[i])
+        //}
+
+        //let x=document.getElementsByClassName('a')
+        //if(x.length > 0){
+            //console.log(x)
+        //for(let i=0;i<x.length;i++){
+                //console.log(x[i])
+        //}
+        //} else {
+        //console.log("No elements found with class 'a'")
+    //} 
+    
+        //let x=document.querySelector('h1')
+        //console.log(x)
+
+        //let x=document.querySelectorAll('.a, .b, .c')
+        //console.log(x)
+        //for(let i=0;i<x.length;i++){
+             //console.log(x[i])
+        //}
+
+        //let t=document.createElement("h3")
+        //t.className="tt"
+        //t.textContent="I am in clg"
+        //document.body.appendChild(t)
+        //console.log(t)
+
+        //const t=["guna","Ashish","hema"]
+        //for(let i=0;i<t.length;i++){
+            //let tt=document.createElement("h3")
+            //tt.className="tt"
+            //tt.textContent=t[i];
+           // console.log(t[i])
+           // console.log(tt)
+           // console.log(t)
+       // }
+
+        const g=["Harsha","Guru","Teja"]
+        for(let i=0;i<g.length;i++){
+            let gg=document.createElement('h4')
+            gg.className="gg"
+            gg.textContent=g[i];
+            console.log(g[i])
+            console.log(gg)
+            console.log(g)
+        }
+    </script>
+</body>
+</html>
