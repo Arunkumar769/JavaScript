@@ -1,0 +1,47 @@
+App.js
+import { useState } from "react";
+
+import ChildA from "./components/ChildA";
+import ChildB from "./components/ChildB";
+
+const Parent =()=>{
+  const [count, setCount] = useState(0);
+  const increment=()=>{
+    setCount(c=>c+1);
+  };
+  return(
+    <div>
+      <ChildA/>
+      <ChildB count={count} increment={increment}/>
+    </div>
+  )
+}
+export default Parent;
+
+
+ChildA.js
+const ChildA = () => {
+    console.log("Child A rendered")
+    return (
+      <div>
+        <h2>Child A</h2>
+        <p>This is Child A component</p>
+      </div>
+    );
+  };
+  
+  export default ChildA;
+
+
+ChildB.js
+const ChildA = () => {
+    console.log("Child A rendered")
+    return (
+      <div>
+        <h2>Child A</h2>
+        <p>This is Child A component</p>
+      </div>
+    );
+  };
+  
+  export default ChildA;
