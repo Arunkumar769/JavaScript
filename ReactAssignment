@@ -1,0 +1,155 @@
+App.js
+function App(){
+  const data="I Love My Car"
+  return(
+    <div>
+      <User1 data={data}/>
+    </div>
+  )
+}
+
+function User1({data}){
+  return(
+      <div>
+          <User2 data={data}/>
+      </div>
+  )
+}
+
+function User2({data}){
+  return(
+      <div>
+          <User3 data={data}/>
+      </div>
+  )
+}
+
+function User3({data}){
+  return(
+      <div>
+          <User4 data={data}/>
+      </div>
+  )
+}
+
+function User4({data}){
+    return(
+        <div>
+            {data}
+        </div>
+    )
+}
+export default App;
+
+
+
+
+Assignment2
+const Parent = () => {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount((c) => c + 1);
+  };
+
+  const decrement = () => {
+    setCount((c) => c - 1);
+  };
+
+  return (
+    <div>
+      <ChildA />
+      <ChildB count={count} increment={increment} decrement={decrement} />
+    </div>
+  );
+};
+
+export default Parent;
+*/
+import React, { createContext, useContext } from "react";
+import "./App.css"
+// Create context to hold the data
+const DataContext = createContext();
+
+function App() {
+  const data = { name: "Arun Kumar", email: "j.arunpatel2222@gmail.com" };
+
+  return (
+    // Provide the data to entire application
+    <DataContext.Provider value={data}>
+      <User1 />
+    </DataContext.Provider>
+  );
+}
+
+function User1(){
+  return <User2/>
+}
+
+function User2(){
+  return <User3/>
+}
+
+function User3(){
+  return <Profile/>
+}
+
+// USER 1 COMPONENT
+function Profile() {
+  const userData = useContext(DataContext);
+
+  return (
+    <div className="App">
+      <h1>{userData.name}</h1>
+      <h2>{userData.email}</h2>
+    </div>
+  );
+}
+
+export default App;
+
+function App(){
+  const data ="Hello I am Arun"
+  return(
+    <div>
+      <ChildA data={data}/>
+    </div>
+  )
+}
+function ChildA({data}){
+  return <ChildB data={data}/>
+}
+function ChildB({data}){
+  return <ChildC data={data}/>
+}
+function ChildC({data}){
+  return <ChildD data={data}/>
+}
+function ChildD({data}){
+  return <div>{data}</div>
+}
+export default App;
+import React, { createContext, useContext } from "react";
+const DataContext = createContext()
+function App() {
+  const data = "Hello I am Arun"
+  return (
+    <DataContext.Provider value={data}>
+      <ChildA />
+    </DataContext.Provider>
+  )
+}
+function ChildA() {
+  return <ChildB />
+}
+function ChildB() {
+  return <ChildC />
+}
+function ChildC() {
+  return <ChildD />
+}
+function ChildD() {
+  const data = useContext(DataContext)
+  return <div>{data}</div>
+}
+export default App;
